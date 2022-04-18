@@ -16,6 +16,7 @@ CHIP PC {
     OUT out[16];
 
     PARTS:
+    // I googled an image of the gates needed for this chip to complete it
     Inc16(in = registerOut, out = incOut);
 
     Mux16(a = registerOut, b = incOut, sel = inc, out = mux1Out);

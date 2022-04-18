@@ -15,6 +15,11 @@ CHIP RAM8 {
     OUT out[16];
 
     PARTS:
+    // for this chip I knew I needed to have 8 of the register chip thingys but I wasn't sure what
+    // else I needed to complete this chip so I googled a picture of its structure and that's how I completed it.
+    // I saw what other logic gates I needed for this chip and was able to complete it.
+    // Once I completed this chip I realized that all the other RAM chips would basically have the same structure so I just
+    // copied my work from here to the other chips and altered what needed to be altered.
     DMux8Way(in = load, sel = address, a = a, b = b, c = c, d = d, e = e, f = f, g = g, h = h);
 
     Register(in = in, load = a, out = register0);
@@ -25,6 +30,6 @@ CHIP RAM8 {
     Register(in = in, load = f, out = register5);
     Register(in = in, load = g, out = register6);
     Register(in = in, load = h, out = register7);
-    
+
     Mux8Way16(a = register0, b = register1, c = register2, d = register3, e = register4, f = register5, g = register6, h = register7, sel = address, out = out);   
 }
