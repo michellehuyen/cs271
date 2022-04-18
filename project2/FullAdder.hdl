@@ -37,7 +37,5 @@ CHIP FullAdder {
     Xor(a = a, b = b, out = aXb);
     And(a = c, b = aXb, out = cAndaXorb);
 
-    And(a = a, b = b, out = ab);
-
     Or(a = cAndaXorb, b = ab, out = carry);
 }
