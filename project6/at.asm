@@ -1,0 +1,15 @@
+// kahfh
+
+@42
+@256
+A=A+1
+@LOOP
+D=D+M;JGE
+D;JEQ
+@OUTPUT_FIRST
+0;JMP
+(SP)
+(OUTPUT_FIRST)
+@SP
+(LOOP)
+@R1
