@@ -4,7 +4,7 @@ import assemble
 import sys
 
 def main():
-    # python main.py ../project6/max/Max.asm
+    # python main.py ../final/max/Max.asm
     if len(sys.argv) > 1:
         fileName = ''.join(sys.argv[1])
         table = symbolTable.Table()
